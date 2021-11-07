@@ -1,0 +1,389 @@
+<!--Marina Also Cardona y Maria Campos Meseguer-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contempart</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="iconos/iconoarriba.ico">
+</head>
+<body>
+   <header>
+      <!--logo + texto + fondo-->
+      <div class="container-foto-cosas">
+         <div class="foto-cosas">
+          <div class="logotipo">
+              <img src="iconos/logotipo.png" alt="logotipo"> 
+          </div>
+          <div class="texto-encima">
+              <h1>MUSEO</h1> 
+              <h1>CONTEMPART</h1>
+          </div>
+        </div> 
+      </div>
+
+      <!--menú-->
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img src="iconos/menu.png" width="25" height="23" alt=""></label>
+        <nav class="menu">
+          <ul>
+            <li><a href="#titulouno">INTRO</a></li>
+            <li><a href="#titulodos">MOVIMIENTOS</a></li>
+            <li><a href="#titulotres">IMPRESIONISMO</a></li>
+            <li><a href="#titulocuatro">FAUVISMO</a></li>
+            <li><a href="#titulocinco">NAÍF</a></li> 
+            <li><a href="#tituloseis">VANGUARDIAS</a></li>  
+          </ul>
+       </nav>
+   </header>
+
+    <!--texto introducción-->
+    <article>
+       <div class="texto-medio">
+          <h2>INTRODUCCIÓN <a id="titulouno"></a> </h2>   
+          <p>Esta página web se trata de un museo online donde se exponen múltiples obras de diferentes movimientos de las Vanguardias, como el Impresionismo, Fauvismo… El objetivo es culturizar a la sociedad para que las etapas artísticas antecedentes al arte actual no caigan en el olvido. También queremos que sea un espacio para artistas donde puedan encontrar inspiración sin necesidad de ir buscando por la red los movimientos independientemente, pues en esta página podrán encontrar toda la información relevante en un mismo espacio.</p>
+       </div>
+    </article>
+    
+    <!--tarjetas movimientos-->
+    <div class="container-card">
+	  <a id="titulodos"></a>
+       <div class="card"> <!--primera tarjeta-->
+          <figure>
+              <img src="imagenes/fotostarjetas/IMPRESIONISMO.jpg" alt="cuadro impresionista">
+          </figure> 
+          <div class="contenido-card">  
+              <h3>IMPRESIONISMO</h3>
+              <p>El impresionismo es una corriente artística que surge en el último tercio del siglo XIX y se caracteriza por plasmar la realidad como era percibida visualmente, esto es, por estudiar la luz y los mecanismos de percepción óptica del color</p>
+          </div>
+       </div>
+
+       <div class="card"> <!--segunda tarjeta-->
+          <figure>
+              <img src="imagenes/fotostarjetas/FAUVISMO.jpg" alt="cuadro fauvista">
+          </figure>
+          <div class="contenido-card">
+              <h3>FAUVISMO</h3>
+              <p>El fauvismo o fovismo es un movimiento artístico que surge entre los años 1904 a 1908 que se caracterizó por la utilización de colores puros, de modo a delimitar, proporcionar volumen, relieve y perspectivas en las obras.
+            </p>
+          </div>
+       </div>
+
+       <div class="card"> <!--tercera tarjeta-->
+          <figure>
+              <img src="imagenes/fotostarjetas/NAIF.jpg" alt="cuadro naíf">
+          </figure>
+          <div class="contenido-card">
+              <h3>ARTE NAÍF</h3>
+              <p>El arte Naif es una corriente que desarrollaron un grupo de artistas al que denominaron naifs o aficionados por el hecho de no dedicarse la pintura como actividad principal, sino al margen de sus respectivas ocupaciones profesionales. </p>
+          </div>
+       </div>
+    </div>
+
+    <!--slider-->
+    <section class="todo-slider">
+        <h4>obras impresionistas slider</h4>
+       <div class="container-all">
+          <input type="radio" id="1" name="image-slide" hidden/>
+          <input type="radio" id="2" name="image-slide" hidden/>
+          <input type="radio" id="3" name="image-slide" hidden/>
+
+          <div class="slide"> <!--fotos slider-->
+              <div class="item-slide"> 
+                  <img src="imagenes/fotoslider/F1.png" alt=""> 
+              </div>
+
+              <div class="item-slide">
+                  <img src="imagenes/fotoslider/F2.jpg" alt=""> 
+              </div>
+
+              <div class="item-slide">
+                  <img src="imagenes/fotoslider/F3.png" alt=""> 
+              </div>
+         </div>
+
+          <div class="pagination"> <!--botones slider-->
+              <label class="pagination-item" for="1">
+                  <img src="imagenes/fotoslider/F1.png" alt="">
+              </label>
+
+              <label class="pagination-item" for="2">
+                  <img src="imagenes/fotoslider/F2.jpg" alt="">
+              </label>
+
+              <label class="pagination-item" for="3">
+                  <img src="imagenes/fotoslider/F3.png" alt="">
+              </label>
+          </div> 
+      </div>
+    </section>
+
+    <!--secciones autores según el movimiento-->
+       <div class="autores-impresionismo"> <!--impresionismo-->
+          <h1>AUTORES IMPRESIONISMO <a id="titulotres"></a></h1> 
+          <div class="todo-autor-uno">
+               <div class="biografia-autor"> <!--parte de texto primer autor impresionismo-->
+                  <div class="columna-autor-texto">
+                      <h2>Vincent Van Gogh</h2>
+                      <p>Vincent Van Gogh nació el 30 de marzo de 1853 en Groot-Zundert de Holanda y se considera uno de los mayores exponentes del Impresionismo. En su juventud comenzó a trabajar en una galería de arte familiar donde creció su amor por la pintura. Años después, encerrado en la religión, se convirtió en pastor protestante y se trasladó a una región minera de Bélgica como misionero, donde comenzó a dibujar a la gente local. Aprovechando su estancia en Bélgica, se inscribió en la Academia de Bellas Artes de Bruselas en 1880, donde estudió dibujo y perspectiva. Pero no comenzará a sorprender con sus creaciones hasta que se traslada a Arlés (Francia) en 1888, donde descubre la luz del Mediterráneo y los colores.</p>
+                      <p>La figura imprescindible en su vida fue su hermano menor Theo, marchante de arte, quien le prestó apoyo financiero y moral de manera continuada y desinteresada. La gran amistad que les unió está documentada en las numerosas cartas que se intercambiaron durante su vida.</p>
+                  </div>
+               </div>
+               <div class="obras-autor"> <!--fotos obras primer autor impresionismo-->
+                  <div class="columna-obra-uno">
+                      <img src="imagenes/fotosautores/vangogh/girasoles.jpg" width="400" height="350" alt="">   
+                      <h6>"Los girasoles"</h6>
+                  </div>
+
+                  <div class="columna-obra-dos">
+                      <img src="imagenes/fotosautores/vangogh/paisaje.jpg" width="400" height="350" alt="">   
+                      <h6>"Paisaje de noche al amanecer"</h6>
+                  </div>
+
+                  <div class="columna-obra-tres">
+                      <img src="imagenes/fotosautores/vangogh/VG1.jpeg" width="400" height="350" alt="">   
+                      <h6>"Terraza de café por la noche"</h6>
+                  </div>
+               </div>
+          </div>
+
+          <div class="todo-autor-dos">
+              <div class="biografia-autor"> <!--parte de texto segundo autor impresionismo-->
+                 <div class="columna-autor-texto">
+                      <h2>Paul Gauguin</h2>
+                      <p>Eugène Henri Paul Gauguin nació en París el 7 de junio de 1848 y falleció en Atuona el 8 de mayo de 1903. Fue un pintor postimpresionista reconocido después de su fallecimiento. El uso experimental del color y su estilo sintetista fueron elementos clave para su distinción respecto al impresionismo. Su trabajo fue de gran influencia para los vanguardistas franceses y para muchos otros artistas modernos, como Pablo Picasso y Henri Matisse. El arte de Gauguin se volvió popular después de su muerte, parcialmente debido a los esfuerzos del comerciante de arte Ambroise Vollard, quien organizó exhibiciones de su obra casi al término de su carrera y póstumas en París.</p>
+                 </div>
+              </div>
+              <div class="obras-autor"> <!--fotos obras segundo autor impresionismo-->
+                  <div class="columna-obra-uno">
+                      <img src="imagenes/fotosautores/gauguin/PG2.jpg" width="400" height="350" alt="">   
+                      <h6>"Mujeres tahitianas en la playa"</h6>
+                  </div>
+                  <div class="columna-obra-dos">
+                      <img src="imagenes/fotosautores/gauguin/PG1.jpg" width="400" height="350" alt="">   
+                      <h6>"Autorretrato con el Cristo amarillo"</h6>
+                  </div>
+                  <div class="columna-obra-tres">
+                      <img src="imagenes/fotosautores/gauguin/PG4.jpg" width="400" height="350" alt="">   
+                      <h6>"Arearea"</h6>
+                 </div>
+              </div>
+          </div>
+       </div>
+
+       <div class="autores-fauvismo"> <!--fauvismo-->
+         <h1>AUTORES FAUVISMO<a id="titulocuatro"></a></h1> 
+           <div class="todo-autor-uno">
+              <div class="biografia-autor"> <!--parte de texto primer autor fauvismo--> 
+                  <div class="columna-autor-texto">
+                      <h2>Henri Matisse</h2>
+                      <p>Henri Émile Benoît Matisse nació en Le Cateau-Cambrésis  el 31 de diciembre de 1869 y falleció en Niza el 3 de noviembre de 1954. Fue un pintor francés conocido por su uso del color y por su empleo original y fluido del dibujo.</p>
+                      <p>Como dibujante, grabador, escultor, pero principalmente como pintor, es reconocido ampliamente como uno de los grandes artistas del siglo xx. Al inicio de su carrera, se le identificó con el fauvismo y en los años 20 ya se había destacado por su maestría en el lenguaje expresivo del color y del dibujo. Durante su trayectoria, supo conjugar en sus obras la influencia de artistas como Van Gogh o Gauguin, con la de las cerámicas persas, el arte africano o las telas moriscas.</p>
+                  </div>
+              </div>
+              <div class="obras-autor"> <!--fotos obras primer autor fauvismo-->
+                  <div class="columna-obra-uno">
+                      <img src="imagenes/fotosautores/matisse/HM1.jpg" width="400" height="350" alt="">   
+                      <h6>"Estudio de Matisse"</h6>
+                  </div>
+                  <div class="columna-obra-dos">
+                      <img src="imagenes/fotosautores/matisse/HM2.jpg" width="400" height="350" alt="">   
+                      <h6>"Banda verde"</h6>
+                  </div>
+                  <div class="columna-obra-tres">
+                      <img src="imagenes/fotosautores/matisse/HM3.jpg" width="400" height="350" alt="">   
+                      <h6>"La alfombra roja"</h6>
+                  </div>
+              </div>
+              <div class="todo-autor-dos">
+                  <div class="biografia-autor"> <!--parte de texto segundo autor fauvismo-->
+                      <div class="columna-autor-texto">
+                          <h2>Raoul Dufy</h2>
+                          <p>Raoul Dufy nació en Le Havre el 3 de junio de 1877 y murió en Forcalquier el 23 de marzo de 1953. Fue un pintor fauvista y cubista , artista gráfico y diseñador textil francés. Desarrolló un estilo colorido y decorativo que se hizo popular en diseños para cerámica, tejidos y esquemas decorativos de edificios públicos. Destaca por sus escenas de acontecimientos sociales al aire libre.</p>
+                      </div>
+                  </div>
+                  <div class="obras-autor"> <!--fotos obras segundo autor fauvismo-->
+                      <div class="columna-obra-uno"> 
+                          <img src="imagenes/fotosautores/dufy/dufy.jpg" width="400" height="350" alt="">   
+                          <h6>"La cuadrícula"</h6>
+                      </div>
+                      <div class="columna-obra-dos">
+                          <img src="imagenes/fotosautores/dufy/RD1.jpg" width="400" height="350" alt="">   
+                          <h6>"La gran bañista"</h6>
+                      </div>
+                      <div class="columna-obra-tres">
+                          <img src="imagenes/fotosautores/dufy/RD5.jpg" width="400" height="350" alt="">   
+                          <h6>"Casas en Trouville"</h6>
+                      </div>
+                  </div>
+              </div>
+           </div>
+      </div>
+
+      <div class="autores-arte-naif"> <!--arte naif-->
+          <h1>AUTORES ARTE NAÍF <a id="titulocinco"></a></h1> 
+          <div class="todo-autor-uno">
+              <div class="biografia-autor"> <!--parte de texto primer autor arte naif--> 
+                 <div class="columna-autor-texto">
+                      <h2>Frida Kahlo</h2>
+                      <p>Nació en 1907 y murió en 1954 en Coyoacán, Ciudad de México. En 1925, sufrió un trágico accidente cuyas consecuencias padeció hasta su muerte. Durante una larga convalecencia, empezó a pintar su rostro copiándolo de un espejo montado en el dosel de la cama.  Primero, fue realista y retrató a familiares y amigos, también gustó de pintar flores.  Pero después, a causa de la intensidad de sus sentimientos y de un cuerpo destrozado, pintó más y más su propia imagen combinada con expresiones oníricas, en ocasiones brutales.</p>
+                      <p>En 1929, se casó con Diego Rivera de quien se divorció en 1940 para volverse a casar con él un año después. En 1938, montó su primera exposición individual en Nueva York. Participó en múltiples exposiciones a lo largo de su vida hasta falleció debido a la enfermedad que padecía</p>
+                 </div>
+              </div>
+              <div class="obras-autor"> <!--fotos obras primer autor arte naif-->
+                  <div class="columna-obra-uno">
+                      <img src="imagenes/fotosautores/frida/FK3.jpg" width="400" height="350" alt="">   
+                      <h6>"La columna rota"</h6>
+                  </div>
+                  <div class="columna-obra-dos">
+                      <img src="imagenes/fotosautores/frida/FK1.jpg" width="400" height="350" alt="">   
+                      <h6>"El abrazo de amor del universo, la tierra, yo, Diego y el señor Xólotl"</h6>
+                  </div>
+                  <div class="columna-obra-tres">
+                      <img src="imagenes/fotosautores/frida/FK2.jpg" width="400" height="350" alt="">   
+                      <h6>"Las dos Fridas"</h6>
+                  </div>
+              </div>
+              <div class="todo-autor-dos">
+                  <div class="biografia-autor"> <!--parte de texto segundo autor arte naif-->
+                      <div class="columna-autor-texto">
+                          <h2>Henri Rousseau</h2>
+                          <p>El aduanero Rousseau (1844 - 1910), fue un pintor francés uno de los máximos representantes del arte naíf. A pesar de sus intenciones "realistas", destacan el tono poético, la búsqueda de lo exótico y su estilo naíf, reflejo de una aparente sensibilidad infantil propia de los artistas con poca formación académica; esta ingenuidad otorga con frecuencia a sus trabajos un aspecto de caricatura. Su formación autodidacta junto a una primacía de la fantasía sobre lo real determinó su estilo, de difícil inclusión en movimientos artísticos. A pesar de desconocer las técnicas compositivas, logró dotar sus obras de un sugerente y complejo colorido, muy elogiado entre sus seguidores.</p>
+                          <p>Desde 1890 se observa una maduración en su lenguaje pictórico. Durante toda su carrera artística pintó obras de corte realista, con frecuencia también dejó que su fantasía se potenciara hasta casi el surrealismo.</p>
+                      </div>
+                  </div>
+                  <div class="obras-autor"> <!--fotos obras segundo autor arte naif-->
+                      <div class="columna-obra-uno">
+                          <img src="imagenes/fotosautores/rousseau/HR3.jpg" width="400" height="350" alt="">   
+                          <h6>"Leones y tigres"</h6>
+                      </div>
+                      <div class="columna-obra-dos">
+                          <img src="imagenes/fotosautores/rousseau/HR4.jpg" width="400" height="350" alt="">   
+                          <h6>"Selva en el ecuador"</h6>
+                      </div>
+                      <div class="columna-obra-tres">
+                          <img src="imagenes/fotosautores/rousseau/HR2.jpg" width="400" height="350" alt="">   
+                          <h6>"Yo mismo"</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--texto debajo de las secciones-->
+      <article>
+           <div class="texto-medio"> 
+              <h3>Vanguardias <a id="tituloseis"></a></h3> 
+              <p>Se llaman vanguardias artísticas a los movimientos rupturistas de las artes plásticas que surgieron a partir del siglo XX, y que tuvieron como objetivo expresar los nuevos tiempos por medio de la innovación del lenguaje pictórico y/o escultórico.</p>
+              <p>Entre ellos podemos mencionar al impresionismo, al expresionismo , al dadaísmo, al fauvismo, al surrealismo...</p>
+           </div>
+      </article>
+
+      <!--galeria de fotos-->
+      <div class="grid-container">
+          <div
+            class="grid-item tall"
+            style="background-image: url(imagenes/fotosgaleria/RM.jpg)"
+          ></div>
+          <div
+            class="grid-item"
+            style="background-image: url(imagenes/fotosgaleria/pp.jpg);"
+          ></div>
+          <div
+            class="grid-item wide"
+            style="background-image: url(imagenes/fotosgaleria/monet.jpg);"
+          ></div>
+          <div
+            class="grid-item"
+            style="background-image: url(imagenes/fotosgaleria/PC.jpg);"
+          ></div>
+          <div
+            class="grid-item"
+            style="background-image: url(imagenes/fotosgaleria/SO.jpg);"
+          ></div>
+          <div
+            class="grid-item"
+            style="background-image: url(imagenes/fotosgaleria/RM2.jpg);"
+          ></div>
+      </div>
+      
+      <!--footer-->
+      <footer>
+         <div class="container-footer-all"> <!--parte del footer superior-->
+              <div class="container-body">
+                  <div class="colum1">
+                      <h1>Ubicación del Museo</h1>
+                      <div class="map-wrapper">
+                          <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5966.265939060647!2d0.6254833403948384!3d41.60963622264747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6e1826e5782bb%3A0xb581a087ab99307d!2sCampus%20de%20Cappont!5e0!3m2!1ses!2ses!4v1635952109887!5m2!1ses!2ses" width="380" height="250" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                  </div>
+                  <div class="colum2">
+                      <h1>Redes Sociales</h1>
+                      <div class="row">
+                          <img src="iconos/facebook.png" alt="icono facebook">
+                          <label>
+                            <a href="https://www.facebook.com/profile.php?id=100074811994345">Síguenos en Facebook</a>
+                          </label>
+                      </div> 
+                      <div class="row">
+                        <img src="iconos/instagram.png" alt="icono instagram">
+                        <label>
+                            <a href="https://www.instagram.com/mcontempart">Síguenos en Instagram</a>
+                        </label>
+                      </div>
+                      <div class="row">
+                          <img src="iconos/twitter.png" alt="icono twitter">
+                          <label>
+                            <a href="https://twitter.com/mcontempart">Síguenos en Twitter</a>
+                          </label>
+                      </div>
+            
+                      <div class="row">
+                          <img src="iconos/tik-tok.png" alt="icono tik tok">
+                          <label>
+                            <a href="https://www.tiktok.com/@mcontempart">Síguenos en Tik Tok</a>
+                          </label>
+                      </div>
+                      <div class="row">
+                          <img src="iconos/pinterest.png" alt="icono pinterest">
+                          <label>
+                            <a href="https://pin.it/2sfot1r">Síguenos en Pinterest</a>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="colum3">
+                      <h1>Información / Contacto</h1>
+                      <div class="row2">
+                          <img src="iconos/mapa.png" alt="icono ubicación">
+                          <label>Campus de Cappont,
+                            C/ de Jaume II, 71, 
+                            25001 Lleida</label>
+                      </div>
+                      <div class="row2">
+                          <img src="iconos/telefono.png" alt="icono telefono">
+                          <label>+34 123 45 67 89</label>
+                      </div>
+                      <div class="row2">
+                          <img src="iconos/email.png" alt="icono carta">
+                          <label>mcontempart@gmail.com</label>
+                      </div>
+                  </div>
+              </div> 
+          </div>
+          
+             <div class="container-footer">  <!--parte del footer inferior-->
+                   <div class="footer">
+                      <div class="copyright">
+                        © 2021 Todos los Derechos Reservados | <a href="">CONTEMPART</a>
+                      </div>
+                      <div class="information">
+                        <a href="">Información Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                    </div>
+               </div>
+          </div>
+        
+    </footer>  
+</body>
+</html>

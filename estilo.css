@@ -1,0 +1,782 @@
+/*Marina Also Cardona y Maria Campos Meseguer*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*transición del desplazamiento al hacer click en el menu*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*encabezado(foto+logo+texto)*/
+.container-foto-cosas{
+    background: url("imagenes/fondoheader/fotoheader.png") top center no-repeat;
+    width: 100%;         
+}
+
+.foto-cosas{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logotipo{
+     padding-top: 50px;
+     padding-left: 1px;
+}
+
+.logotipo img{
+     width: 110px;
+     height: 110px;
+
+}
+
+.texto-encima{    
+    font-size: 20px;
+    font-family: "Lemon Milk Regular";
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 3px;
+    padding-right: 20px;
+}
+
+.texto-encima h1{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 370px){
+    .container-foto-cosas{
+        align-content: center;
+    }
+
+    .foto-cosas{
+        flex-wrap: wrap;
+    }
+
+    .logotipo{
+        align-items: center;
+    }
+    
+    .texto-encima{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 0px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .logotipo img{  
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/*menu*/
+header {
+    width:100%;
+    background:#6c909c;
+}
+
+.menu{
+    font-family: "Kiona";
+}
+
+#btn-menu{   
+    display:none;
+}
+
+header label {
+    display:none;
+    width: 40px;
+    height: 40px;
+    padding: 10px;  
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;   
+}
+
+.menu li {
+    border-right: 1px solid;
+    border: 0px; 
+}
+
+
+.menu li:hover{
+    background:rgba(0, 0, 0, 0.1)
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+}
+
+@media (max-width:768px){
+    header label {
+        display:block;
+    }
+
+    .menu {
+     position: absolute;
+      background:#5e7e88;  
+      width: 70%;
+      margin-left :-70%;
+      transition: all 0.5s;
+    }
+
+    .menu ul {
+
+        flex-direction: column;
+
+    }
+
+    .menu li {
+        border-top: 1px solid #fff;
+        border: none;
+
+    }
+    
+    #btn-menu:checked ~ .menu  {
+        margin: 0;
+    }
+
+}
+
+/*introducción*/
+.texto-medio h2{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 70px;
+    font-family: 'Kiona';
+    color: rgb(46, 46, 46);
+    margin-bottom: 15px;
+}
+
+.texto-medio h3{
+    margin-top: 1px;
+    margin-left: 60px;
+    margin-right: 70px;
+    font-family: 'Kiona';
+    color: rgb(46, 46, 46);
+    margin-bottom: 5px;
+}
+
+.texto-medio p{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'GeoSans';
+    color: rgb(46, 46, 46);
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/*tarjetas movimientos*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	background:#6c909c;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+.card:hover{
+    background:#5e7e88;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.card img{
+	width: 100%;
+	height: 210px;
+    object-fit: cover;
+}
+
+.card .contenido-card{
+	padding: 15px;
+}
+
+.card .contenido-card h3{
+	padding: 2px;
+	text-align: center;
+}
+
+.card .contenido-card p{	
+	text-align: justify;
+}
+
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #ffffff;
+    font-family: "Kiona";
+}
+
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #ffffff;
+	font-size: 14px;
+	margin-bottom: 5px;
+    font-family: 'GeoSans';
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+/*slider*/
+
+.todo-slider h4{
+    font-size: 0px;
+    color: #fff;
+}
+
+.todo-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+img{
+    max-width: 100%;
+}
+   
+.container-all{
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+   
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;    
+}
+   
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+   
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+   
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+   
+.pagination-item:hover{
+    transform: scale(2);
+}
+   
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+   
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+   
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+   
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+   
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+   
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+   
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+   
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+@media screen and (max-width: 520px){
+    .pagination-item{
+        width: 10px;
+        height: 10px;
+    }
+}
+   
+ /*autores*/
+.autores-impresionismo{
+    background: #5e7e88;
+    color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+
+.autores-fauvismo{
+    background: #5e7e88;
+    color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+}
+
+.autores-arte-naif{
+    background: #5e7e88;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.autores-impresionismo h1{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 33px;
+    font-family: "Kiona";
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.autores-fauvismo h1{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 33px;
+    font-family: "Kiona";
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.autores-arte-naif h1{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 33px;
+    font-family: "Kiona";
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.todo-autor-uno{    
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 1px;  
+}
+
+.todo-autor-uno h1{
+    font-size: 30px;
+}
+
+.biografia-autor{
+    display: flex;
+    padding-top: 30px;  
+}
+
+.obras-autor{
+    display: flex;
+    margin: 30px;
+    max-width: 1600px;
+    align-content: center; 
+}
+
+.columna-autor-texto{
+    max-width: 1600px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.columna-autor-texto h2{
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: "Kiona";   
+}
+
+.columna-autor-texto p{
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-family: "GeoSans";
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.columna-obra-uno{
+  max-width: 533px;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.columna-obra-uno img{
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.columna-obra-uno img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+
+.columna-obra-dos{
+    max-width: 533px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.columna-obra-dos img{
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.columna-obra-dos img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.columna-obra-tres{
+    max-width: 533px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.columna-obra-tres img{
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.columna-obra-tres img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.obras-autor h6{
+    padding-top: 5px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-family: "GeoSans";
+    font-style: italic;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+   .obras-autor{
+    flex-wrap: wrap;  
+ }
+}
+
+/*galeria fotos*/
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+    margin-bottom: 35px;
+}
+  
+@media (min-width: 600px) {
+    .wide {
+      grid-column: span 2;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    background: #6c909c;
+    color: white;     
+}
+
+.container-footer-all{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px; 
+}
+
+.colum1 h1{
+    font-size: 22px;
+    font-family: "Kiona";
+    padding-bottom: 25px;
+}
+
+.colum1 p{
+    font-size: 17px;
+    color: white;
+    margin-top: 20px;
+    font-family: 'GeoSans';
+}
+
+.colum2{
+    max-width: 400px;
+}
+
+.colum2 h1{
+    font-size: 22px;
+    font-family: "Kiona";
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 17px;
+    font-family: 'GeoSans';
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+    font-family: "Kiona";
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+    font-family: 'GeoSans';
+}
+
+.container-footer{
+    width: 100%;  
+    background: #5e7e88;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+    font-size: 17px;
+}
+
+.copyright{
+    color: white;
+    font-family: 'GeoSans';
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Kiona";
+}
+
+.information{
+    color: #ffffff;
+    font-family: 'Arial';
+}
+
+.information a{
+    text-decoration: none;
+    color: white;
+    font-family: 'GeoSans';
+}
+
+.row a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px){  
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+/*mapa googlemaps*/
+.map-wrapper{
+ max-width: 700px;
+}
+
+.googlemap{
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 460px){
+    .googlemap{
+      width: 250px;
+      height: 250px;
+    } 
+}
+
+/*fuentes descargadas*/
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('fuentesletra/Kiona-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'GeoSans';
+    src: url('fuentesletra/GeosansLight.ttf');
+  }
+
+  @font-face {
+    font-family: 'Lemon Milk Regular';
+    src: url('fuentesletra/LEMONMILK-Regular.otf');
+  }
+
+
